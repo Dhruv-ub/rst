@@ -1,0 +1,131 @@
+/* Navbar
+.navbar {
+    background-color: #003366;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .navbar-links a {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .navbar-links a:hover {
+    color: #1e90ff;
+  }
+   */
+
+   /* Navbar Styles */
+/*  */
+
+/* General Navbar Styles */
+.navbar {
+    background-color: #003366;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .navbar-link:hover {
+    color: #1e90ff;
+  }
+  
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+  }
+  
+  /* Active state when menu is open */
+  .navbar-links.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #003366;
+    text-align: center;
+  }
+  
+  .navbar-links.active .navbar-link {
+    padding: 10px 0;
+  }
+  
+  /* For screens smaller than 768px (mobile devices) */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+  
